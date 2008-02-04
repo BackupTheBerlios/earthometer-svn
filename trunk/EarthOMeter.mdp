@@ -1,0 +1,47 @@
+<Project name="EarthOMeter" fileversion="2.0" language="C#" clr-version="Net_2_0" ctype="DotNetProject">
+  <Configurations active="Release">
+    <Configuration name="Debug" ctype="DotNetProjectConfiguration">
+      <Output directory="./bin/GTK/Debug" assembly="EarthOMeter" />
+      <Build debugmode="True" target="Exe" />
+      <Execution runwithwarnings="True" consolepause="True" runtime="MsNet" clr-version="Net_2_0" />
+      <CodeGeneration compiler="Csc" warninglevel="4" optimize="True" unsafecodeallowed="False" generateoverflowchecks="True" mainclass="" generatexmldocumentation="False" ctype="CSharpCompilerParameters" />
+    </Configuration>
+    <Configuration name="Release" ctype="DotNetProjectConfiguration">
+      <Output directory="./bin/GTK/Release" assembly="EarthOMeter" />
+      <Build debugmode="False" target="Exe" />
+      <Execution runwithwarnings="True" consolepause="True" runtime="MsNet" clr-version="Net_2_0" />
+      <CodeGeneration compiler="Csc" warninglevel="4" optimize="True" unsafecodeallowed="False" generateoverflowchecks="True" mainclass="" generatexmldocumentation="False" ctype="CSharpCompilerParameters" />
+    </Configuration>
+  </Configurations>
+  <DeployTargets />
+  <Contents>
+    <File name="./gtk-gui/gui.stetic" subtype="Code" buildaction="Exclude" />
+    <File name="./gtk-gui/generated.cs" subtype="Code" buildaction="Compile" />
+    <File name="./AssemblyInfo.cs" subtype="Code" buildaction="Compile" />
+    <File name="./Geographic/Coordinate.cs" subtype="Code" buildaction="Compile" />
+    <File name="./Geographic/CoordinatesDistanceSummarizer.cs" subtype="Code" buildaction="Compile" />
+    <File name="./Geographic/kml/KmlCoordinatesParser.cs" subtype="Code" buildaction="Compile" />
+    <File name="./Geographic/kml/KMLDistance.cs" subtype="Code" buildaction="Compile" />
+    <File name="./Geographic/kml/DistanceLine.cs" subtype="Code" buildaction="Compile" />
+    <File name="./GTKGUI" subtype="Directory" buildaction="Compile" />
+    <File name="./GTKGUI/MainWindow.cs" subtype="Code" buildaction="Compile" />
+    <File name="./glyph" subtype="Directory" buildaction="Compile" />
+    <File name="./glyph/Icon16x16.png" subtype="Code" buildaction="EmbedAsResource" />
+    <File name="./glyph/Icon22x22.png" subtype="Code" buildaction="EmbedAsResource" />
+    <File name="./GTKGUI/About.cs" subtype="Code" buildaction="Compile" />
+    <File name="./GTKGUI/Main.cs" subtype="Code" buildaction="Compile" />
+    <File name="./glyph/About.png" subtype="Code" buildaction="EmbedAsResource" />
+  </Contents>
+  <References>
+    <ProjectReference type="Gac" localcopy="True" refto="gtk-sharp, Version=2.8.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <ProjectReference type="Gac" localcopy="True" refto="gdk-sharp, Version=2.8.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <ProjectReference type="Gac" localcopy="True" refto="glib-sharp, Version=2.8.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <ProjectReference type="Gac" localcopy="True" refto="glade-sharp, Version=2.8.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <ProjectReference type="Gac" localcopy="True" refto="pango-sharp, Version=2.8.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <ProjectReference type="Gac" localcopy="True" refto="System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <ProjectReference type="Gac" localcopy="True" refto="System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  </References>
+  <GtkDesignInfo>
+    <ExportedWidgets />
+  </GtkDesignInfo>
+</Project>

@@ -1,0 +1,17 @@
+<Combine name="EarthOMeter" fileversion="2.0">
+  <Configurations active="Release">
+    <Configuration name="Debug" ctype="CombineConfiguration">
+      <Entry build="True" name="EarthOMeter" configuration="Debug" />
+    </Configuration>
+    <Configuration name="Release" ctype="CombineConfiguration">
+      <Entry build="True" name="EarthOMeter" configuration="Release" />
+    </Configuration>
+  </Configurations>
+  <DeployTargets />
+  <StartMode startupentry="EarthOMeter" single="True">
+    <Execute type="None" entry="EarthOMeter" />
+  </StartMode>
+  <Entries>
+    <Entry filename="./EarthOMeter.mdp" />
+  </Entries>
+</Combine>
